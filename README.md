@@ -179,4 +179,3 @@ For issues or questions:
 
 **Note**: This application provides realistic NO₂ and CO₂ data simulations based on city characteristics and seasonal patterns. The data is simulated for educational purposes and should not be used for official environmental analysis. For official air quality data, please consult local environmental agencies. For real satellite data analysis, visit Google Earth Engine at code.earthengine.google.com.
 
- for you right now? If yes, I'll run the command in your project directory. 
