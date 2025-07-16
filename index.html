@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentinel-5P NO₂ & CO₂ Satellite Data Simulator</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🌍 Sentinel-5P NO₂ & CO₂ Satellite Data Simulator</h1>
+            <p>Interactive analysis of simulated satellite NO₂ and CO₂ data for educational purposes</p>
+        </div>
+
+        <div class="controls">
+            <div class="control-group">
+                <label for="cityInput">City:</label>
+                <input type="text" id="cityInput" placeholder="Enter city name (e.g., Paris, London, Tokyo)" value="Paris">
+            </div>
+            <div class="control-group">
+                <label for="startDate">Start Date:</label>
+                <input type="date" id="startDate" value="2024-01-01">
+            </div>
+            <div class="control-group">
+                <label for="endDate">End Date:</label>
+                <input type="date" id="endDate" value="2024-01-31">
+            </div>
+            <div class="control-group">
+                <button onclick="loadNO2Analysis()">📊 NO₂ Analysis</button>
+                <button onclick="loadCO2Analysis()">🌱 CO₂ Analysis</button>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="map-container">
+                <h3>🗺️ Interactive Map</h3>
+                <div id="map"></div>
+                <div class="data-info">
+                    <h4>📡 Simulated Satellite Data Information</h4>
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <strong>Satellite:</strong> Sentinel-5P (Simulated)
+                        </div>
+                        <div class="info-item">
+                            <strong>Instrument:</strong> TROPOMI (Simulated)
+                        </div>
+                        <div class="info-item">
+                            <strong>Product:</strong> NRTI/L3_NO2 & NRTI/L3_CO2 (Simulated)
+                        </div>
+                        <div class="info-item">
+                            <strong>Resolution:</strong> 5.5 x 3.5 km (Simulated)
+                        </div>
+                        <div class="info-item">
+                            <strong>Coverage:</strong> Global daily (Simulated)
+                        </div>
+                        <div class="info-item">
+                            <strong>Data Type:</strong> Realistic Simulations
+                        </div>
+                    </div>
+                </div>
+                <div class="gee-integration">
+                    <h4>📚 Educational Simulator</h4>
+                    <p>This simulator provides realistic data patterns based on actual city characteristics for educational purposes. For real satellite data analysis, visit Google Earth Engine.</p>
+                    <div style="margin-top: 10px;">
+                        <span class="api-status status-connected">✅ Simulator Active</span>
+                        <span class="real-data-indicator">🎓 Educational Data</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="analysis-container">
+                <h3>📊 Analysis Results</h3>
+                <div id="analysisContent">
+                    <div style="text-align: center; padding: 40px; color: #666;">
+                        <p>Enter a city name and date range, then click an analysis button to view simulated results.</p>
+                        <p><strong>Supported Cities:</strong> Paris, London, Tokyo, New York, Beijing, Delhi, Moscow, Berlin, Madrid, Rome, and more...</p>
+                        <p><em>Note: This simulator uses realistic data patterns for educational purposes only.</em></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="export-section">
+            <p style="text-align: center; color: #666; margin: 0; padding: 20px;">
+                Use the analysis buttons above to analyze simulated NO₂ and CO₂ data for any city worldwide.
+            </p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
