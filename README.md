@@ -1,4 +1,4 @@
-# Sentinel-5P NO₂ & CO₂ Satellite Data Simulator
+# Interactive dashboard for simulated satellite data (Sentinel-5P NO₂ & CO₂)
 
 A clean, single HTML application for simulating and analyzing Sentinel-5P NO₂ and CO₂ satellite data with interactive maps and statistical analysis for educational purposes.
 
@@ -179,32 +179,4 @@ For issues or questions:
 
 **Note**: This application provides realistic NO₂ and CO₂ data simulations based on city characteristics and seasonal patterns. The data is simulated for educational purposes and should not be used for official environmental analysis. For official air quality data, please consult local environmental agencies. For real satellite data analysis, visit Google Earth Engine at code.earthengine.google.com.
 
----
-
-## **Option 1: Python HTTP Server (Recommended, No Install Needed)**
-
-If you have Python installed, you can quickly serve the current directory:
-
-### For Python 3.x:
-```sh
-python3 -m http.server 8000
-```
-
-Then open your browser and go to:  
-[http://localhost:8000/index.html](http://localhost:8000/index.html)
-
----
-
-## **Option 2: Node.js (if you prefer)**
-If you have Node.js, you can use:
-```sh
-npx serve .
-```
-or
-```sh
-npx http-server .
-```
-
----
-
-Would you like me to start a Python HTTP server for you right now? If yes, I'll run the command in your project directory. 
+ for you right now? If yes, I'll run the command in your project directory. 
